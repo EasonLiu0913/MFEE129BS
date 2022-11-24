@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex basis</title>
+
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .col {
+            border: 1px solid red;
+            /* flex-grow: 1; */
+            flex-shrink: 0;
+
+            /* width: 100px; */
+            min-width: 10px;
+            flex-basis: 200px;
+            max-width: 50px;
+            /* min-width, max-width > basis > width > content(內容) */
+        }
+
+        /* .col1 {
+            width: 300px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col col1">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+    </div>
+</body>
+
+</html>
