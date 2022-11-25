@@ -10,20 +10,38 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <style>
-        .border-left-darkgray {
-            border-left: 1px solid darkgray;
+        /* .border-red {
+            border: 1px solid red;
+        } */
+
+        /* .bg-lightblue {
+            background: lightblue;
+        } */
+
+        section {
+            border: 1px solid red;
+            min-height: 100px;
+        }
+
+        section:nth-child(1) {
+            background: #ccc;
+            margin-bottom: 10px;
+        }
+
+        section:nth-child(2) {
+            background: lightskyblue;
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
-    <header class="border-bottom">
+    <header class="bg-lightblue py-3 border-bottom">
         <div class="container">
-            <div class="row">
+            <div class="row border-red">
                 <div class="col-auto">
                     <h1 class="m-0 d-flex align-items-center">
-
-                        <div class="me-3">
+                        <div class="me-3 d-flex">
                             <svg class="logo align-middle" style="height: 28px; width: 28px; " viewBox="0 0 138 138"
                                 xmlns="http://www.w-16.org/2000/svg">
                                 <title>zeczec</title>
@@ -48,7 +66,7 @@
                     </h1>
                 </div>
                 <div class="col-auto d-flex align-items-center">
-                    <a class="text-black text-decoration-none me-3 border-left-darkgray ps-4" href="#">探索</a>
+                    <a class="text-black text-decoration-none me-3 border-start ps-4" href="#">探索</a>
                     <a class="text-black text-decoration-none me-3" href="#">提案</a>
                 </div>
                 <div class="col-auto"></div>
@@ -59,7 +77,9 @@
     <nav></nav>
 
     <main>
-
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
     </main>
 
     <footer></footer>
