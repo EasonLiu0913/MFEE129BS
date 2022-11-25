@@ -18,25 +18,24 @@
             background: lightblue;
         } */
 
-        section {
-            border: 1px solid red;
-            min-height: 100px;
+        .box1 {
+            background-color: #faf;
         }
 
-        section:nth-child(1) {
-            background: #ccc;
-            margin-bottom: 10px;
+        .box2 {
+            background-color: #ffa;
         }
 
-        section:nth-child(2) {
-            background: lightskyblue;
-            margin-top: 10px;
+        @media screen and (min-width:768px) {
+            .border-top-md-0 {
+                border-top: none !important;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header class="bg-lightblue py-3 border-bottom">
+    <header class="bg-lightblue pt-3 pb-md-3 border-bottom">
         <div class="container">
             <div class="row border-red">
                 <div class="col-auto">
@@ -65,11 +64,19 @@
                         </svg>
                     </h1>
                 </div>
-                <div class="col-auto d-flex align-items-center">
-                    <a class="text-black text-decoration-none me-3 border-start ps-4" href="#">探索</a>
-                    <a class="text-black text-decoration-none me-3" href="#">提案</a>
+                <div
+                    class="col-12 col-md-auto d-flex align-items-center order-2 order-sm-0 text-center py-3 py-md-0 border-top border-top-md-0 mt-3 mt-md-0">
+
+
+
+                    <a class="col-6 text-black text-decoration-none me-md-3 border-md-start ps-md-4" href="#">探索</a>
+                    <a class="col-6 text-black text-decoration-none me-md-3" href="#">提案</a>
                 </div>
-                <div class="col-auto"></div>
+                <div class="col-auto ms-auto order-1 order-sm-0">
+                    <button class="btn btn-secondary btn-sm">登入</button>
+                    <button class="btn btn-secondary btn-sm">註冊</button>
+                    <button class="btn btn-secondary btn-sm">Facebook 登入</button>
+                </div>
             </div>
         </div>
     </header>
@@ -77,10 +84,6 @@
     <nav></nav>
 
     <main>
-        <section>1</section>
-        <section>2</section>
-        <section>3</section>
-        <section>4</section>
     </main>
 
     <footer></footer>
